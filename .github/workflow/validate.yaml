@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults: 
       run:
-        working-directory: ./bank-activity-lab
+        working-directory: ./bank-activity-lab/
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
