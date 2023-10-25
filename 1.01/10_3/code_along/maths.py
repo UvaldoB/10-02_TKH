@@ -1,12 +1,8 @@
-# TODO:
 
-# part 1
-...
+print(3+2)
+print(3-2)
 
-# part 2
-...
+x = 3*2
+print(x)
 
-# part 3
-...
 
-# run via python maths.py
