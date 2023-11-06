@@ -24,9 +24,9 @@ class StockMetrics(StockData):
                    y.append(float(x))
                except ValueError:
                    continue 
-            average = stats.mean(y)
-            rounded_average = round(average, 3)
-            averages.append(rounded_average)                                  
+           average = stats.mean(y)
+           rounded_average = round(average, 3)
+           averages.append(rounded_average)                                  
 
 
         return averages
@@ -51,4 +51,15 @@ class StockMetrics(StockData):
     def stddev03(self):
         """pt3
         """
-        ...
+        stddev = [] 
+        for row in self.data:
+           data_row = row[1:]
+           d = [] 
+           for c in data_row:
+               try:
+                   d.append(float(c))
+               except ValueError:
+                   continue 
+           stddev = stats.stddev(d)
+           rounded_stddev = round(stddev, 3)
+           stddev.append(rounded_stddev) 
